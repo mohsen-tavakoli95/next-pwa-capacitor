@@ -6,8 +6,9 @@ import { SignJWT, jwtVerify, JWTPayload } from "jose";
 
 // const BASE_URL = "http://api.jasmincard.com/api/";
 
-const secretKey = process.env.NEXT_PUBLIC_SESSION_SECRET;
-const encodedKey = new TextEncoder().encode(secretKey);
+// const secretKey = process.env.NEXT_PUBLIC_SESSION_SECRET;
+// const secretKey = process.env.NEXT_PUBLIC_SESSION_SECRET;
+const encodedKey = new TextEncoder().encode("987676");
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
