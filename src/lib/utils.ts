@@ -4,7 +4,7 @@ import { fetcherFunctionType, TokenType } from "@/types";
 import { getSession } from "./session";
 import { SignJWT, jwtVerify, JWTPayload } from "jose";
 
-const BASE_URL = "http://api.jasmincard.com/api/";
+// const BASE_URL = "http://api.jasmincard.com/api/";
 
 const secretKey = process.env.NEXT_PUBLIC_SESSION_SECRET;
 const encodedKey = new TextEncoder().encode(secretKey);
