@@ -22,7 +22,7 @@ export const fetcher: fetcherFunctionType = async (endpoint, options) => {
     if (session) token = session.accessToken;
   }
 
-  const res = await fetch(`${BASE_URL}${endpoint}`, {
+  const res = await fetch(`http://api.jasmincard.com/api/${endpoint}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
