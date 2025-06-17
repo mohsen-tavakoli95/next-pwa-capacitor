@@ -71,7 +71,7 @@ export async function login(prevState: unknown, formData: FormData) {
     console.log(err);
     return {
       errors: {
-        username: ["Invalid email or password"],
+        username: [JSON.stringify(err)],
       },
     };
   }
