@@ -1,11 +1,9 @@
-import React from "react";
+import { LoginForm } from "./LoginForm";
 
-import Test from "./Test";
 const Login = () => {
-  console.log("first");
   return (
     <div>
-      <Test />
+      <LoginForm />
     </div>
   );
 };
